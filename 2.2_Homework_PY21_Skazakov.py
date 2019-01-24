@@ -10,7 +10,7 @@ class LiveStock(object):
         self.weight = weight  # вес животного
 
     def feed(self):
-        print('Надо накормить животных.\n')
+        print('Их надо покормить.\n')
 
 
 class Goose(LiveStock):
