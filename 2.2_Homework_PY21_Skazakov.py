@@ -148,7 +148,7 @@ class Duck(Goose):
         print('Их надо накормить: {}\n'.format(self.fodder))
 
 
-def goose():
+def goose_output():
     goose_0 = Goose('Белый', 7)
     if goose_0.name == 'Белый':
         weight_list.append(goose_0.weight)
@@ -163,10 +163,10 @@ def goose():
     weight_dict.setdefault('Гусь', ([{goose_0.name: goose_0.weight, goose_1.name: goose_1.weight}]))
     weight_dict_names.setdefault(goose_0.name, goose_0.weight)
     weight_dict_names.setdefault(goose_1.name, goose_1.weight)
-goose()
+goose_output()
 
 
-def cow():
+def cow_output():
     cow = Cow('Манька', 120)
     print(cow)
     if cow.name == 'Манька':
@@ -176,10 +176,10 @@ def cow():
     cow.voice('мууууу')
     cow.fetch('молоко')
     cow.feed('сеном и соломой')
-cow()
+cow_output()
 
 
-def sheep():
+def sheep_output():
     sheep_0 = Sheep('Барашек', 35)
     if sheep_0.name == 'Барашек':
         weight_list.append(sheep_0.weight)
@@ -194,9 +194,10 @@ def sheep():
     weight_dict.setdefault('Овца', ([{sheep_0.name: sheep_0.weight, sheep_1.name: sheep_1.weight}]))
     weight_dict_names.setdefault(sheep_0.name, sheep_0.weight)
     weight_dict_names.setdefault(sheep_1.name, sheep_1.weight)
-sheep()
+sheep_output()
 
-def chicken():
+
+def chicken_output():
     chicken_0 = Chicken('Коко', 4)
     if chicken_0.name == 'Коко':
         weight_list.append(chicken_0.weight)
@@ -211,10 +212,10 @@ def chicken():
     weight_dict.setdefault('Курица', ([{chicken_0.name: chicken_0.weight, chicken_1.name: chicken_1.weight}]))
     weight_dict_names.setdefault(chicken_0.name, chicken_0.weight)
     weight_dict_names.setdefault(chicken_0.name, chicken_1.weight)
-chicken()
+chicken_output()
 
 
-def goat():
+def goat_output():
     goat_0 = Goat('Рога', 53)
     if goat_0.name == 'Рога':
         weight_list.append(goat_0.weight)
@@ -229,10 +230,10 @@ def goat():
     weight_dict.setdefault('Коза', ([{goat_0.name: goat_0.weight, goat_1.name: goat_1.weight}]))
     weight_dict_names.setdefault(goat_0.name, goat_0.weight)
     weight_dict_names.setdefault(goat_1.name, goat_1.weight)
-goat()
+goat_output()
 
 
-def duck():
+def duck_output():
     duck = Duck('Кряква', 4)
     print(duck)
     if duck.name == 'Кряква':
@@ -242,7 +243,7 @@ def duck():
     duck.fetch('утиные яйца')
     duck.voice('кря-кря-кря-кря')
     duck.feed('зерном, хлебом и разными отходами. Они весьма всеядны.')
-duck()
+duck_output()
 
 
 def final_output():
