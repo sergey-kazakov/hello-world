@@ -248,10 +248,8 @@ duck_output()
 
 def final_output():
     print('\n', 'Список-словарь живого веса по животным:\n {}'.format(weight_dict))
-
     tot_weight = sum(weight_list)
     print('\n', 'Общий вес поголовья фермы Дядюшки Джо: {} кг.'.format(tot_weight))
-
     heaviest_name = max(weight_dict_names, key=weight_dict_names.get)
     heaviest_weight = max(weight_dict_names.values())
     heaviest_animal = ''
@@ -259,10 +257,8 @@ def final_output():
         for j in i[-1]:
             if heaviest_name in j:
                 heaviest_animal = i[0]
-
     print('\n', 'Самое тяжелое животное на ферме Дядюшки Джо - это {} {}, ее вес составляет {} кг. живого веса.'.format(
         heaviest_animal, heaviest_name, heaviest_weight))
-
     lightiest_name = min(weight_dict_names, key=weight_dict_names.get)
     lightiest_weight = min(weight_dict_names.values())
     lightiest_animal = ''
@@ -270,10 +266,8 @@ def final_output():
         for j in i[-1]:
             if lightiest_name in j:
                 lightiest_animal = i[0]
-
     print('\n',
           'Самое легкое животное на ферме Дядюшки Джо - это {} {}, ее вес составляет всего {} кг. живого веса.'.format(
               lightiest_animal, lightiest_name, lightiest_weight))
-
     print('\n И это все на сегодня, дорогие гости. Всего Вам доброго, до свидания и приходите к нам ещё!')
 final_output()
